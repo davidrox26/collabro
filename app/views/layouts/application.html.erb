@@ -11,12 +11,16 @@
   <%= render 'layouts/header' %>
 </p>
 <% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
+  <span class="alert alert-success"><%= notice %></p>
 <% end %>
 <% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
+  <span class="alert alert-danger"><%= alert %></p>
 <% end %>
-<%= yield %>
 
+<div class="container">
+<%= yield %>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFA1Bvpqc1AOCP5Pu2HINf_XRIgyBjhG8&callback=initMap"
+    async defer></script>
 </body>
 </html>

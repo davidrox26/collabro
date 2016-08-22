@@ -32,6 +32,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Devise
 gem 'devise'
 
+# Map
+gem 'geocoder'
+
+# Gmaps
+gem 'gmaps4rails'
 # Ruby Racer
 gem 'therubyracer'
 
