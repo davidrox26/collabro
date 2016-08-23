@@ -3,12 +3,13 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+  
   has_one :profile
   geocoded_by :full_address
   after_validation :geocode
-  
+
   def full_address
-    [city, state, zipcode].join(', ')
+    # [city, state, zipcode].join(', ')
   end
 
 end
