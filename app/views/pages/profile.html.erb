@@ -17,12 +17,16 @@
             </div>
         </div>
     </div>
+    
      <div class="col-xs-6">
+         <% for @p in @posts %>
          <div class="panel panel-default">
             <div class="panel-body">
-        <p>feed</p>
+        <p><%= @p.content %></p>
             </div>
         </div>
+            <% end %>
+
     </div>
      <div class="col-xs-3">
          <div class="panel panel-default">
@@ -30,12 +34,6 @@
         <p>about</p>
             </div>
         </div>
-    </div>
-</div>
-<!-- second row -->
-
-<div class="row">
-    <div class="col-xs-3">
         <div class="panel panel-default">
             <div class="panel-body">
         <p>hot topics</p>
