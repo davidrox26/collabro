@@ -13,7 +13,8 @@ class PagesController < ApplicationController
     else
       redirect_to root_path, :notice=> "User not found!"
   end
-
+  end
   def explore
   end
+
 end

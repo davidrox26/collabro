@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '0186bf676a976591bb7d285ec8f01e1f57cd952b6be0481f8a12a7292a36f2d326ed5ab007744ed07fd3ca671cc2829f13ffd66118548be2067fe177999b9191'
+  # config.secret_key = '327942c657c54db970820f30b28ff4eabeab4cebee9c6a09049aeca8cd7a3960d90e062bab6c8a96056c6e8e8f30ce4285a2ae7690fd1e6c0e0734334a85f3e2'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -108,7 +108,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '7d523397aa8308abf37f7d3475ba45a420304f10fa36ffa0b327ad70bb81c28be6d3cfc79e4cb17e0e6f274c6c40d08d94bafaa22b10d31ce54f493469e0e37a'
+  # config.pepper = '0b50e25e0844532f5f38eaa7cc189c046735e68a1446d8066ac63cb9b0cbb5bb82ea36999c82c181988abf050702132bb53bf679e03683546605af126bdf082d'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -201,8 +201,6 @@ Devise.setup do |config|
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
   config.reset_password_within = 6.hours
-  
-  config.authentication_keys = [ :login ]
 
   # When set to false, does not sign a user in automatically after their password is
   # reset. Defaults to true, so a user is signed in automatically after a reset.

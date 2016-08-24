@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   
   has_one :profile
+  has_many :posts
   geocoded_by :full_address
   after_validation :geocode
 
