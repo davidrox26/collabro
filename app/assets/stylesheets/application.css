@@ -5,3 +5,9 @@
  *= require_self
  *= require_tree .
 */
+body {
+    background-color: rgba(212, 216, 212, .5);
+}
+.navbar {
+    background-color: white;
+}
